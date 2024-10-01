@@ -5,7 +5,7 @@
   <div class="w-50 p-2 ms-5">
     <div class="w-75">
       <h1 class="text-center mb-4">login</h1>
-      <h1 class="text-center mb-4">{{loginForm.get('email')?.errors|json}}</h1>
+      <!-- <h1 class="text-center mb-4">{{loginForm.get('email')?.errors|json}}</h1> -->
       <form [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
         <div class="p-3">
           <input formControlName="email" class="form-control" type="email" placeholder="email">
@@ -32,7 +32,7 @@
           }
         </div>
         <br>
-        <button [disabled]="loginForm.invalid"  class="btn btn-danger form-control w-25 m-auto p-2">login</button>
+        <button [disabled]="loginForm.invalid" class="btn btn-danger form-control w-25 m-auto p-2">login</button>
         <a routerLink="/forgetPassword" class="btn btn-outline-danger mx-5">forget password</a>
       </form>
     </div>
