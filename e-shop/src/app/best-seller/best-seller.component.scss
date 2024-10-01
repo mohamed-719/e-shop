@@ -1,0 +1,102 @@
+h1 {
+    padding-top: 20px;
+    font-size: 2.5rem; // Larger font size
+    color: #343a40; // Dark gray text color for contrast
+    text-align: center; // Centers the heading
+    margin-bottom: 1.5rem; // Adds space below the heading
+
+    // Adds a subtle shadow for a nice depth effect
+    text-shadow: 2px 2px 5px rgba(2, 2, 2, 0.1);
+
+    // Add a bottom border for a distinctive look
+    border-bottom: 3px solid #dc3545; // Red border to match the button theme
+    display: inline-block; // Needed for the border to fit nicely
+    padding-bottom: 0.5rem; // Adds space between text and the border
+
+    // Additional styling to ensure it looks centered and appealing
+    width: 100%; // Makes sure it occupies full width for center alignment
+    box-sizing: border-box; // Ensures padding is included in the width
+}
+
+// Styling for the product cards
+.row {
+    margin: 0 auto; // Center the row
+
+    .card {
+        width: 100%; // Full width inside the column
+        max-width: 18rem; // Limit max width for larger screens
+        transition: transform 0.3s, box-shadow 0.3s; // Smooth transition effects
+
+        &:hover {
+            transform: translateY(-5px); // Lift effect on hover
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+        }
+
+        .card-img-top {
+            height: 200px; // Fixed height for image
+            object-fit: cover; // Maintain aspect ratio
+            border-top-left-radius: 0.5rem; // Rounded corners for aesthetics
+            border-top-right-radius: 0.5rem; // Rounded corners for aesthetics
+        }
+
+        .card-body {
+            padding: 1rem; // Consistent padding for card body
+
+            .card-title {
+                font-size: 1.25rem; // Slightly larger title
+                margin-bottom: 0.5rem; // Spacing below title
+                color: #333; // Dark color for better readability
+            }
+
+            .card-text {
+                font-size: 0.9rem; // Font size for descriptions
+                color: #666; // Lighter color for secondary text
+                margin-bottom: 0.5rem; // Space between paragraphs
+            }
+
+            .btn-card {
+                position: absolute;
+                bottom: 1rem; // Align buttons at the bottom of the card
+                left: 0;
+                right: 0;
+                display: flex; // Flex layout for buttons
+                justify-content: space-between; // Space buttons evenly
+
+                .btn {
+                    flex: 1; // Each button takes equal space
+                    margin: 0 0.5rem; // Margin between buttons
+                    transition: background-color 0.3s, transform 0.3s; // Smooth transitions
+
+                    &:hover {
+                        transform: translateY(-2px); // Lift effect on button hover
+                    }
+                }
+
+                .btn-primary {
+                    background-color: #007bff; // Primary button color
+                    border: none;
+
+                    &:hover {
+                        background-color: #0056b3; // Darker shade on hover
+                    }
+                }
+
+                .btn-success {
+                    background-color: #28a745; // Success button color
+                    border: none;
+
+                    &:hover {
+                        background-color: #218838; // Darker shade on hover
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive design adjustments
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; // Full width for smaller screens
+    }
+}

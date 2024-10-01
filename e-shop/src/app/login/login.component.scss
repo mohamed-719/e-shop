@@ -1,4 +1,98 @@
+// Style for Login Form
+h1 {
+  font-size: 2.5rem; // Larger font size
+  text-transform: uppercase; // Makes text uppercase
+  color: #343a40; // Dark gray text color for contrast
+  text-align: center; // Centers the heading
+  margin-bottom: 1.5rem; // Adds space below the heading
+
+  // Adds a subtle shadow for a nice depth effect
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  // Add a bottom border for a distinctive look
+  border-bottom: 3px solid #dc3545; // Red border to match the button theme
+  display: inline-block; // Needed for the border to fit nicely
+  padding-bottom: 0.5rem; // Adds space between text and the border
+
+  // Additional styling to ensure it looks centered and appealing
+  width: 100%; // Makes sure it occupies full width for center alignment
+  box-sizing: border-box; // Ensures padding is included in the width
+}
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.d-flex {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 .img-cover {
   width: 50vw;
   height: 85vh;
+  background-color: #f2f3f4; // Background color for the image container
+  color: #f2f3f4; // Text color (if needed)
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+form {
+  .form-control {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .text-danger {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+
+  .btn {
+    transition: background-color 0.3s ease;
+
+    &.btn-danger {
+      background-color: #dc3545;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+
+    &.btn-outline-danger {
+      border-color: #dc3545;
+      color: #dc3545;
+
+      &:hover {
+        background-color: #dc3545;
+        color: white;
+      }
+    }
+  }
+
+  .mx-5 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.ms-5 {
+  margin-left: 3rem !important;
+}
+
+.text-center {
+  text-align: center !important;
 }

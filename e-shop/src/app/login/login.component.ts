@@ -23,8 +23,9 @@ export class LoginComponent implements OnInit {
   login(formData: FormGroup) {
     this._AuthService.login(formData.value).subscribe({
       next: (res) => {
+        console.log(res);
         localStorage.setItem('user', res.token);
-        // this._AuthService.saveCurrentUser();
+        this._AuthService.saveCurrentUser();
         this._Router.navigate(['/home']);
       },
       error: (err) => {
@@ -33,6 +34,10 @@ export class LoginComponent implements OnInit {
     })
   }
   ngOnInit(): void {
+    // this._AuthService.test().subscribe({
+    //   next:() =>{},
+    //   error:() => {}
+    // })
     this.phoneImage = this._AuthService.authPhoto;
   }
 };
