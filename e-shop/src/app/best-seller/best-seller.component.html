@@ -1,8 +1,9 @@
-<h1 class="text-center ">Best Sellers</h1>
+<h1 class="text-center">Best Sellers</h1>
 <div class="row m-auto container mt-4">
   @for(product of products; track product._id){
   <div class="card m-2 col-4" style="width: 18rem;">
     <img [src]="imgDomain+product.cover" class="card-img-top w-100 h-50" [alt]="product.name">
+ 
     <div class="card-body position-relative">
       <h5 class="card-title">{{product?.name}}</h5>
       <p class="card-text">{{product?.description!|description:10}}...</p>
