@@ -1,0 +1,124 @@
+h1 {
+    font-size: 2.5rem; // Larger font size
+    text-transform: uppercase; // Makes text uppercase
+    color: #343a40; // Dark gray text color for contrast
+    text-align: center; // Centers the heading
+    margin-bottom: 1.5rem; // Adds space below the heading
+
+    // Adds a subtle shadow for a nice depth effect
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    // Add a bottom border for a distinctive look
+    border-bottom: 3px solid #dc3545; // Red border to match the button theme
+    display: inline-block; // Needed for the border to fit nicely
+    padding-bottom: 0.5rem; // Adds space between text and the border
+
+    // Additional styling to ensure it looks centered and appealing
+    width: 100%; // Makes sure it occupies full width for center alignment
+    box-sizing: border-box; // Ensures padding is included in the width
+}
+
+.container {
+    margin: 5rem auto;
+
+
+
+    // Profile Section Styling
+    .profile-section {
+        width: 50%;
+        margin: auto;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+
+        .profile-img {
+            width: 25%;
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+
+        .profile-info {
+            margin-left: 2rem;
+
+            .form-control {
+                margin-bottom: 1.5rem;
+                padding: 0.75rem 1rem;
+                border-radius: 0.5rem;
+                border: 1px solid #ddd;
+                font-size: 1rem;
+            }
+
+            button {
+                width: 100%;
+                padding: 0.75rem 1rem;
+                background-color: #dc3545;
+                color: white;
+                border: none;
+                border-radius: 0.5rem;
+                transition: background-color 0.3s;
+.form-group {
+        display: flex;
+        justify-content: center; // Centering the button horizontally
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; // Optional: make the button take the full width of its container
+    }
+                &:hover {
+                    background-color: #c82333;
+                }
+            }
+        }
+    }
+
+    // Change Password Section Styling
+    .password-section {
+        width: 50%;
+        margin: auto;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 0.75rem;
+        background-color: #fff;
+
+        .form-group {
+            width: 75%;
+            margin: auto;
+
+            .form-control {
+                margin-bottom: 1.5rem;
+                padding: 0.75rem 1rem;
+                border-radius: 0.5rem;
+                border: 1px solid #ddd;
+                font-size: 1rem;
+            }
+
+            .text-danger {
+                font-size: 0.875rem;
+                color: #dc3545;
+                margin-top: 0.5rem;
+            }
+
+            button {
+                width: 100%;
+                padding: 0.75rem 1rem;
+                background-color: #dc3545;
+                color: white;
+                border: none;
+                border-radius: 0.5rem;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #c82333;
+                }
+            }   
+        }
+    }
+}

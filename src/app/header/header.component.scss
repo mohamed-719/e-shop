@@ -1,0 +1,90 @@
+.navbar {
+    background-color: #808b96; // Main background color for the navbar
+    padding: 1rem;
+    border-bottom: 1px solid #5a6570; // Darker border for contrast
+    transition: background-color 0.3s ease; // Smooth transition for background color
+
+    // Navbar brand styling
+    .navbar-brand {
+        color: #ffffff;
+        font-size: 1.75rem; // Slightly larger for emphasis
+        font-weight: bold;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #f7f9f9; // Lightens on hover
+        }
+    }
+
+    // Toggler button for mobile view
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'><path stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); // Add focus outline
+        }
+    }
+
+    // Navbar links
+    .nav-link {
+        color: #ffffff;
+        padding: 0.75rem 1.25rem; // Adequate padding for touch targets
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em; // Slight letter spacing for readability
+        transition: color 0.3s, background-color 0.3s; // Smooth transitions
+
+        &.active,
+        &:hover {
+            color: #f7f9f9; // Light color for active and hover state
+            background-color: #a4a6a7; // Subtle background change on hover
+            border-radius: 0.25rem; // Rounded corners for hover effect
+        }
+    }
+
+    // Dropdown menu styling
+    .dropdown-menu {
+        background-color: #5a6570; // Dropdown background
+        border: 1px solid #808b96;
+
+        .dropdown-item {
+            color: #ffffff;
+            padding: 0.75rem 1.25rem; // Consistent padding
+
+            &:hover {
+                background-color: #6c757d; // Slightly darker on hover
+                color: #ffffff;
+            }
+        }
+    }
+
+    // Icons in the navbar
+    .fa-cart-shopping,
+    .fa-heart {
+        color: #ffffff;
+        font-size: 1.5rem; // Increased size for visibility
+        transition: color 0.3s;
+
+        &:hover {
+            color: #f7f9f9; // Lightens color on hover
+        }
+    }
+
+    // Responsive behavior for smaller screens
+    @media (max-width: 768px) {
+        .navbar {
+            .navbar-brand {
+                font-size: 1.5rem; // Adjust brand size for smaller screens
+            }
+
+            .nav-link {
+                padding: 0.5rem 1rem; // Adjust padding for smaller screens
+                font-size: 0.9rem; // Slightly smaller font for readability
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.btn-card {
+  bottom: 3%;
+  left: 5%;
+}
+
+.container {
+  margin: 0 auto;
+
+  .form-control,
+  .form-select {
+    margin: 0 0.5rem;
+  }
+}
+
+.row {
+  margin: 0 auto;
+
+  .card {
+    width: 100%; // Full width inside the column
+    max-width: 18rem; // Limit max width for larger screens
+    transition: transform 0.3s, box-shadow 0.3s; // Smooth transition effects
+    margin-bottom: 1rem;
+
+    &:hover {
+      transform: translateY(-5px); // Lift effect on hover
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+    }
+
+    .card-img-top {
+      height: 200px; // Fixed height for image
+      object-fit: cover; // Maintain aspect ratio
+      border-top-left-radius: 0.5rem; // Rounded corners for aesthetics
+      border-top-right-radius: 0.5rem; // Rounded corners for aesthetics
+    }
+
+    .card-body {
+      padding: 1rem; // Consistent padding for card body
+      position: relative; // For button alignment
+
+      .card-title {
+        font-size: 1.25rem; // Slightly larger title
+        margin-bottom: 0.5rem; // Spacing below title
+        color: #333; // Dark color for better readability
+      }
+
+      .card-text {
+        font-size: 0.9rem; // Font size for descriptions
+        color: #666; // Lighter color for secondary text
+        margin-bottom: 0.5rem; // Space between paragraphs
+      }
+
+      .btn-card {
+        position: absolute;
+        bottom: 1rem; // Align buttons at the bottom of the card
+        left: 0;
+        right: 0;
+        display: flex; // Flex layout for buttons
+        justify-content: space-between; // Space buttons evenly
+
+        .btn {
+          flex: 1; // Each button takes equal space
+          margin: 0 0.5rem; // Margin between buttons
+          transition: background-color 0.3s, transform 0.3s; // Smooth transitions
+
+          &:hover {
+            transform: translateY(-2px); // Lift effect on button hover
+          }
+        }
+
+        .btn-primary {
+          background-color: #007bff; // Primary button color
+          border: none;
+
+          &:hover {
+            background-color: #0056b3; // Darker shade on hover
+          }
+        }
+
+        .btn-success {
+          background-color: #28a745; // Success button color
+          border: none;
+
+          &:hover {
+            background-color: #218838; // Darker shade on hover
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive design adjustments
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%; // Full width for smaller screens
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  .page-item {
+    margin: 0 0.25rem;
+
+    .page-link {
+      display: block;
+      padding: 0.5rem 1rem;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      color: #007bff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e9ecef;
+        color: #0056b3;
+      }
+
+      &:disabled {
+        color: #6c757d;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
