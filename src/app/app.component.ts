@@ -10,8 +10,9 @@ import { ProductsComponent } from './products/products.component';
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
-  
+
 })
 export class AppComponent {
   title = 'e-shop';
 }
+//////////////////////////////
